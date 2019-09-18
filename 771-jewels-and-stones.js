@@ -18,3 +18,12 @@
 // S and J will consist of letters and have length at most 50.
 // The characters in J are distinct.
 
+var numJewelsInStones = function (J, S) {
+    const jewels = J.split("");
+    let count = 0;
+    S.split("").forEach((char) => {
+        if (jewels.includes(char)) count++;
+    })
+    return count;
+}
+
