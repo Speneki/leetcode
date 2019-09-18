@@ -10,6 +10,13 @@
 // You must do this in -place without making a copy of the array.
 // Minimize the total number of operations.
 
-var moveZeroes = function (nums) {
-    
-};
+function moveZeroes(nums) {
+    var idx = 0;
+    for (var i = 0; i < nums.length; i++) {
+        if (nums[i] !== 0) {
+            nums[idx] = nums[i];
+            if (idx !== i) nums[i] = 0;
+            idx++;
+        }
+    }
+}
