@@ -22,9 +22,9 @@
 // The final answer is guaranteed to be less than 2 ^ 31.
 
 var rangeSumBST = function (root, L, R) {
-    // console.log(root )
-    // if (root === null) return 0;
-    // if (root) {
-    //     return rangeSumBST(L.val, L.left, L.right) + rangeSumBST(R.val, R.left, R.right)
-    // }
+    console.log(root)
+    if (root === null) return 0;
+    if (root) {
+        return rangeSumBST(L.val, L.left, L.right) + rangeSumBST(R.val, R.left, R.right)
+    }
 };

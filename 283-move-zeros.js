@@ -19,4 +19,4 @@ function moveZeroes(nums) {
             idx++;
         }
     }
-}
+};
