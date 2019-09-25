@@ -18,5 +18,5 @@ function moveZeroes(nums) {
             if (idx !== i) nums[i] = 0;
             idx++;
         }
-    }
+    };
 };
